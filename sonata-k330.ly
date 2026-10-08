@@ -313,13 +313,13 @@ dynamics = {
 }
 
 tempi = {
-  % TODO \set Score.tempoHideNote = ##t
   \repeat volta 2 {
     \tempo "Allegro" 4. = 104
     s4.*40 |
     
     \barNumberCheck 41
     s4.*7 |
+    \set Score.tempoHideNote = ##t
     \tempo 4. = 96 s8 \tempo 4. = 88 s \tempo 4. = 80 s |
     
     \barNumberCheck 49
